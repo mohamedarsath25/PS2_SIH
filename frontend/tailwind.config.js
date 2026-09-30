@@ -7,22 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Switch to Light Mode Colors
-        background: '#f1f5f9', // Light gray background
-        card: '#ffffff', // White cards
-        primary: '#0284c7', // Darker cyan/blue for better contrast
-        secondary: '#059669', // Darker green
-        accent: '#0ea5e9',
-        destructive: '#dc2626',
-        border: '#cbd5e1', // Light border
+        // Switch to Dark Mode Colors
+        background: '#0f172a', // Dark slate background
+        card: '#1e293b', // Darker slate cards
+        primary: '#38bdf8', // Cyan/blue
+        secondary: '#34d399', // Green
+        accent: '#818cf8', // Indigo
+        destructive: '#ef4444', // Red
+        border: '#334155', // Dark border
         
-        // Re-map absolute colors used in the UI to their light-mode equivalents
-        // This prevents us from having to rewrite every component file
-        white: '#0f172a', // text-white becomes dark slate
-        black: '#e2e8f0', // bg-black becomes light gray
+        // Re-map absolute colors to actual colors
+        white: '#ffffff', 
+        black: '#000000', 
         gray: {
-          400: '#64748b', // text-gray-400 remains visible gray
-          500: '#94a3b8',
+          400: '#9ca3af', 
+          500: '#6b7280',
         }
       },
       fontFamily: {

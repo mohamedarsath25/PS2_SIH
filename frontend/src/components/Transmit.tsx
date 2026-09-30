@@ -33,7 +33,7 @@ export default function Transmit() {
       setIsRecording(true);
       setStatus('Listening (Speak now)...');
       
-      const SpeechRecognition = window.SpeechRecognition || (window as any).webkitSpeechRecognition;
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
       if (SpeechRecognition) {
         const recognition = new SpeechRecognition();
         const langMap: Record<string, string> = {
